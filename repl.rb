@@ -1,1 +1,0 @@
-loop { p eval gets }
