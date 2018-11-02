@@ -3,9 +3,9 @@
 def alphabet_war(fight)
 
   left_score = 0
-  right_score = 0
+  right_score =0
 
-  fight.downcase.split("").each do | l |
+  fight.downcase.split("").each do |l|
     if l == "w"
       left_score += 4
     elsif l == "p"
@@ -27,15 +27,10 @@ def alphabet_war(fight)
     end
   end
   if left_score > right_score
-    puts "Left side wins!"
-  elsif right_score > left_score
-    puts "Right side wins!"
+    "Left side wins!"
+  elsif left_score < right_score
+    "Right side wins!"
   else left_score == right_score
-    puts "Let's fight again!"
+    "Let's fight again!"
   end
 end
-
-alphabet_war("z")
-alphabet_war("zdqmwpbs")
-alphabet_war("zzzzs")
-alphabet_war("wwwwwwz")
